@@ -147,7 +147,7 @@ export default function StudentsScreen() {
             dropdownIconColor="#38bdf8"
           >
             {batches.map((batch) => (
-              <Picker.Item key={batch._id} label={batch.name} value={batch._id} color="#f0fdf4" />
+              <Picker.Item key={batch._id} label={batch.name} value={batch._id} color="#070707ff" />
             ))}
           </Picker>
         </View>
@@ -172,9 +172,9 @@ export default function StudentsScreen() {
             style={styles.picker}
             dropdownIconColor="#38bdf8"
           >
-            <Picker.Item label="All batches" value="" color="#f0fdf4" />
+            <Picker.Item label="All batches" value="" color="#121312ff" />
             {batches.map((batch) => (
-              <Picker.Item key={batch._id} label={batch.name} value={batch._id} color="#f0fdf4" />
+              <Picker.Item key={batch._id} label={batch.name} value={batch._id} color="#050505ff" />
             ))}
           </Picker>
         </View>
@@ -303,7 +303,7 @@ const styles = StyleSheet.create({
     borderColor: '#1e293b',
   },
   studentName: {
-    color: '#0f0f0fff',
+    color: '#ede8e8ff',
     fontSize: 16,
     fontWeight: '600',
   },
@@ -322,9 +322,10 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   actionButton: {
+    flex:1,
+    flexDirection: 'row',
+    justifyContent: 'center',
     borderRadius: 12,
-    paddingVertical: 6,
-    paddingHorizontal: 14,
     alignItems: 'center',
   },
   actionText: {
@@ -332,3 +333,13 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
+
+
+
+
+
+
+
+
+
+
